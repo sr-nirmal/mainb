@@ -1,0 +1,37 @@
+#options {
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10PX;
+    cursor: pointer;
+    background-color: #FFFBE9;
+    color: #333;
+  }
+  
+  #options:hover {
+    background-color: #FFFBE9;
+  }
+  
+  .bill-sector {
+    font-size: 16px;
+    padding: 8px;
+    color: #666666;
+    /* height: 50px; */
+    background-color: #FFFBE9;
+    /* border: none; */
+    cursor: pointer;
+  }
+  
+  .bill-sector:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .bill-sector:focus {
+    outline: none;
+    background-color: #f2f2f2;
+  }
+  
+ 

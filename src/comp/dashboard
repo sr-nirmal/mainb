@@ -1,0 +1,18 @@
+import React from 'react';
+import Upload from './upload';
+
+function Dashboard(props) {
+  return (
+    <div>
+      {props.currentState === 0 && <div className='init'>Init</div>}
+      {props.currentState === 1 && (
+        <div className='init'>Home
+          <Upload />
+        </div>
+      )}
+      {props.currentState === 2 && <Receipt />}
+    </div>
+  );
+}
+
+export default Dashboard;

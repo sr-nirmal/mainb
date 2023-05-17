@@ -1,0 +1,256 @@
+/* Overall container for the upload component */
+.upload-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr auto auto;
+    justify-content: center;
+    align-content: center;
+    row-gap: 15px;
+}
+
+/* Title of the upload component */
+.upload-title {
+    margin: 0;
+}
+
+/* Main upload area with dashed border */
+.upload1 {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #727272;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 6rem;
+    /* height: 165px; */
+    /* width: 100%; */
+}
+
+
+/* Drag-and-drop area */
+/* .upload-dnd {
+    margin: 0.5rem 0;
+} */
+
+.selected-file {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    /* height: 185px; */
+    justify-content: center;
+    align-content: center;
+}
+
+/* Header for the selected files list */
+.selected-file h4 {
+    margin: 0;
+}
+
+.scroll {
+    height: 187px;
+    overflow-y: auto;
+    /* padding-right: 1rem;
+    padding-left: 1rem; */
+    /* margin-top: 10px; */
+}
+
+
+.scroll::-webkit-scrollbar {
+    width: 1px;
+}
+
+
+.file-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    /* Set a fixed height and allow overflow to make the list scroll */
+    /* identical to box height */
+}
+
+.uploaded-file {
+    gap: 10px;
+    display: grid;
+    /* grid-template-rows: repeat(2,20px); */
+    height: fit-content;
+    align-items: center;
+}
+
+.uploaded-file-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    color: #BB9981;
+}
+
+.uploaded-file-size {
+
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    /* font-weight: 200; */
+    font-size: 14px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #BB9981;
+}
+
+/* Individual file item in the list */
+.file-list li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* grid-template-rows: 50px; */
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 6rem;
+    align-content: center;
+    border: 2px solid #727272;
+    border-radius: 20px;
+}
+
+/* Cancel button for a single file */
+.cancel-single-file {
+    border: none;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.cancel-single-file{
+    background-color: #BB9981;
+      color: rgb(246, 246, 246);
+      border: none;
+      padding: 5px;
+      align-content: end;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+      grid-column: 3/3;
+      margin: 0 0.5rem;
+    }
+/* Container for the buttons at the bottom */
+.upload-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    /* margin-top: 1rem; */
+    grid-row: 4/4;
+
+    /* padding-top: 20px; */
+    /* border-top: 2px solid burlywood; */
+}
+
+
+
+/* Cancel all button */
+.cancel-all {
+    background-color: #FFFBE9;
+    /* color: #242424; */
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+/* Attach file button */
+.attach-file {
+    background-color: #C8AE94;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    /* transition: all 0.3s ease; */
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    /* color: #000000; */
+}
+
+/* Button hover styles */
+.cancel-all:hover {
+    background-color: #f7f2e7;
+}
+
+.attach-file:hover {
+    background-color: #B7967D;
+    /* color: #232323; */
+}
+
+.attach-file:active {
+    background-color: #A67E63;
+    /* color: #232323; */
+}
+
+/* Spacing between the buttons */
+.cancel-all {
+    margin-right: 0.5rem;
+}
+
+.attach-file {
+    margin-left: 0.5rem;
+}
+
+/* upload button */
+.upload-btn {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #FFFBE9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 0.255em;
+
+    color: #000000;
+
+}
+
+.upload-dnd {
+    padding: 10px;
+    margin: 0 0;
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px;
+    background-color: #C8AE94;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #B7967D;
+}
+
+.custom-file-upload:active {
+    background-color: #A67E63;
+}

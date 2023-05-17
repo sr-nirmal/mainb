@@ -1,0 +1,26 @@
+.subtitle {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    /* font-weight: 500;
+    */
+    line-height: 29px;
+    font-size: 24px;
+    color: #363231;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0;
+}
+
+.subtitle-title-edscription {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    margin: 0 0;
+    /*  */
+    /* identical to box height */
+
+    margin: 0 0;
+    color: #4A4A4A;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
